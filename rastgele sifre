@@ -1,12 +1,12 @@
-import random
+import random 
 
-karakterler = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+def sifreOlusturucu(sayi):
+    karakterler = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    
+    sifre = ""
+    for i in range(sayi):
+        sifre = sifre + random.choice(karakterler)
+    return sifre
 
-sayi = int(input("Kaç karakterli bir şifre oluşturmak istersiniz?"))
 
-sifre = ""
-
-for i in range(sayi):
-    sifre = sifre +random.choice(karakterler)
-
-print(sifre)
+tokenn ="TOKEN"
